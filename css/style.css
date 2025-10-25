@@ -1,0 +1,149 @@
+body {
+    font-family: "Playwrite AU TAS", cursive;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(205, 205, 205);
+}
+#topo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgba(143, 0, 0, 0.704);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+#logo {
+    margin: 20px;
+    float: left;
+    padding: 10px 20px 0 0;
+}
+#menu {
+    width: 780px;
+    height: 120px;
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+#menu a {
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 8px 10px;
+    display: inline-block;
+}
+#menu a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(143, 0, 0, 0.704);
+    background-color: gold;
+}
+#introducao {
+    width: 1020px;
+    height: 600px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 15px;
+}
+#foto {
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
+    float: left;
+}
+#foto img {
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#textointroducao {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    display: block;
+    float: right;
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    margin-right: 20px;
+}
+#santidade {
+    width: 1020px;
+    height: 1070px;
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 15px;
+}
+#dicas{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    display: block;
+    float: center;
+    text-align: justify;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.fontes {
+    margin-top: 20px;
+    background-color: rgba(143, 0, 0, 0.05);
+    border: 1px solid rgba(143, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+.fontes summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgba(143, 0, 0, 0.9);
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fontes summary::marker {
+    display: none;
+}
+.fontes p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.6;
+}
+.fontes[open] {
+    background-color: rgba(255, 215, 0, 0.08);
+    border-color: gold;
+}
+.fontes summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgba(143, 0, 0, 0.9);
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fontes summary::marker { display: none; }
+.fontes summary .seta {
+    transition: transform 0.3s ease;
+}
+.fontes[open] summary .seta {
+    transform: rotate(180deg);
+}
