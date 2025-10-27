@@ -47,7 +47,7 @@ body {
     background-color: gold;
 }
 #introducao {
-    width: 1020px;
+    max-width: 1020px;
     height: 600px;
     margin: auto;
     margin-top: 40px;
@@ -79,7 +79,7 @@ body {
     margin-right: 20px;
 }
 #santidade {
-    width: 1020px;
+    max-width: 1020px;
     height: 1070px;
     margin: auto;
     margin-top: 40px;
@@ -146,4 +146,72 @@ body {
 }
 .fontes[open] summary .seta {
     transform: rotate(180deg);
+}
+/* === Ajustes para telas menores === */
+@media (max-width: 1020px) {
+
+    /* Topo */
+    #topo {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #menu {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #menu a {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+
+    #logo img {
+        width: 60px;
+        height: auto;
+    }
+
+    /* Introdução */
+    #introducao {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #foto img {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    #textointroducao {
+        width: 90%;
+        float: none;
+        margin: 0 auto 20px auto;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    /* Seção de Santidade */
+    #santidade {
+        width: 95%;
+        height: auto;
+    }
+
+    #dicas {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .fontes p {
+        font-size: 15px;
+    }
 }
